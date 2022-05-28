@@ -16,17 +16,18 @@
   <link href="views/assets/css/nucleo-svg.css" rel="stylesheet" />
   <!-- Font Awesome Icons -->
   <script src="https://kit.fontawesome.com/42d5adcbca.js" crossorigin="anonymous"></script>
+  <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
   <link href="views/assets/css/nucleo-svg.css" rel="stylesheet" />
   <!-- CSS Files -->
   <link id="pagestyle" href="views/assets/css/argon-dashboard.css?v=2.0.2" rel="stylesheet" />
 </head>
 
 <?php 
+    echo '<body class="g-sidenav-show bg-gray-100">';
     if(isset($_SESSION["iniciarSesion"]) && $_SESSION["iniciarSesion"] == "ok"){
-        echo '<body class="g-sidenav-show   bg-gray-100">';
-                include "modules/aside.php";
+        include "modules/aside.php";
             echo '<main class="main-content position-relative border-radius-lg ">';
-                    include "modules/navbar.php";
+                include "modules/navbar.php";
                 echo '<div class="container-fluid py-4">';
                     echo '<div class="row">';
                             /* Aquí va el contenido dependiendo de la vista a la que entren */
