@@ -1,35 +1,49 @@
+<?php 
+session_start();
+?>
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="light-style layout-menu-fixed" dir="ltr" data-theme="theme-default" data-assets-path="views/assets2/" data-template="vertical-menu-template-free">
 
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <link rel="apple-touch-icon" sizes="76x76" href="views/assets/img/apple-icon.png">
-  <link rel="icon" type="image/png" href="views/assets/img/favicon.png">
-  <title>
-    Chromo Cars | Chile
-  </title>
-  <!--     Fonts and icons     -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet" />
-  <!-- Nucleo Icons -->
-  <link href="views/assets/css/nucleo-icons.css" rel="stylesheet" />
-  <link href="views/assets/css/nucleo-svg.css" rel="stylesheet" />
-  <!-- Font Awesome Icons -->
-  <script src="https://kit.fontawesome.com/42d5adcbca.js" crossorigin="anonymous"></script>
-  <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-  <link href="views/assets/css/nucleo-svg.css" rel="stylesheet" />
-  <!-- CSS Files -->
-  <link id="pagestyle" href="views/assets/css/argon-dashboard.css?v=2.0.2" rel="stylesheet" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
+    <title>CHROME CARS</title>
+    <meta name="description" content="" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="views/assets2/img/favicon/favicon.ico" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet" />
+
+    <!-- Icons. Uncomment required icon fonts -->
+    <link rel="stylesheet" href="views/assets2/vendor/fonts/boxicons.css" />
+
+    <!-- Core CSS -->
+    <link rel="stylesheet" href="views/assets2/vendor/css/core.css" class="template-customizer-core-css" />
+    <link rel="stylesheet" href="views/assets2/vendor/css/theme-default.css" class="template-customizer-theme-css" />
+    <link rel="stylesheet" href="views/assets2/css/demo.css" />
+
+    <!-- Vendors CSS -->
+    <link rel="stylesheet" href="views/assets2/vendor/libs/perfect-scrollbar/perfect-scrollbar.css" />
+
+    <!-- Page CSS -->
+
+    <!-- Helpers -->
+    <script src="views/assets2/vendor/js/helpers.js"></script>
+    <script src="views/assets2/js/config.js"></script>
 </head>
 
 <?php 
-    echo '<body class="g-sidenav-show bg-gray-100">';
     if(isset($_SESSION["iniciarSesion"]) && $_SESSION["iniciarSesion"] == "ok"){
-        include "modules/aside.php";
-            echo '<main class="main-content position-relative border-radius-lg ">';
-                include "modules/navbar.php";
-                echo '<div class="container-fluid py-4">';
-                    echo '<div class="row">';
+        echo '<div class="layout-wrapper layout-content-navbar">';
+            echo '<div class="layout-container">';
+                include "modules/lateral.php";
+                    echo '<div class="layout-page">';
+                        include "modules/navbar.php";
+                            echo '<div class="content-wrapper">';
                             /* Aquí va el contenido dependiendo de la vista a la que entren */
                             if(isset($_GET["ruta"])){
                                 if($_GET["ruta"]=="dashboard"){
@@ -40,34 +54,37 @@
                             }else{
 
                             }
+                            echo '</div>';
                             include "modules/footer.php";
-                    echo '</div>    
-                     </div>
-            </main>';
+                    echo '
+                    <div class="content-backdrop fade"></div>
+                </div>
+            </div>
+        </div>
+    <div class="layout-overlay layout-menu-toggle"></div>
+</div>';
     }else{
         include "modules/login.php";
     }
 ?>
-<!--   Core JS Files   -->
-<script src="views/assets/js/core/popper.min.js"></script>
-<script src="views/assets/js/core/bootstrap.min.js"></script>
-<script src="views/assets/js/plugins/perfect-scrollbar.min.js"></script>
-<script src="views/assets/js/plugins/smooth-scrollbar.min.js"></script>
-<script src="views/assets/js/plugins/chartjs.min.js"></script>
+<!-- Core JS -->
+    <!-- build:js assets/vendor/js/core.js -->
+    <script src="views/assets2/vendor/libs/jquery/jquery.js"></script>
+    <script src="views/assets2/vendor/libs/popper/popper.js"></script>
+    <script src="views/assets2/vendor/js/bootstrap.js"></script>
+    <script src="views/assets2/vendor/libs/perfect-scrollbar/perfect-scrollbar.js"></script>
 
-<script>
-    var win = navigator.platform.indexOf('Win') > -1;
-    if (win && document.querySelector('#sidenav-scrollbar')) {
-    var options = {
-        damping: '0.5'
-    }
-    Scrollbar.init(document.querySelector('#sidenav-scrollbar'), options);
-    }
-</script>
-<!-- Github buttons -->
-<script async defer src="https://buttons.github.io/buttons.js"></script>
-<!-- Control Center for Soft Dashboard: parallax effects, scripts for the example pages etc -->
-<script src="views/assets/js/argon-dashboard.min.js?v=2.0.2"></script>
-</body>
+    <script src="views/assets2/vendor/js/menu.js"></script>
+    <!-- endbuild -->
 
+    <!-- Vendors JS -->
+
+    <!-- Main JS -->
+    <script src="views/assets2/js/main.js"></script>
+
+    <!-- Page JS -->
+
+    <!-- Place this tag in your head or just before your close body tag. -->
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
+  </body>
 </html>
