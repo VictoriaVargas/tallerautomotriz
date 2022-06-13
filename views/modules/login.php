@@ -26,23 +26,7 @@
   <div class="container position-sticky z-index-sticky top-0">
     <div class="row">
       <div class="col-12">
-        <!-- Navbar -->
-        <nav class="navbar navbar-expand-lg blur border-radius-lg top-0 z-index-3 shadow position-absolute mt-4 py-2 start-0 end-0 mx-4">
-          <div class="container-fluid">
-            <a class="navbar-brand font-weight-bolder ms-lg-0 ms-3 " href="views/pages/dashboard.html">
-              Chromo cars
-            </a>
-            <button class="navbar-toggler shadow-none ms-2" type="button" data-bs-toggle="collapse" data-bs-target="#navigation" aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon mt-2">
-                <span class="navbar-toggler-bar bar1"></span>
-                <span class="navbar-toggler-bar bar2"></span>
-                <span class="navbar-toggler-bar bar3"></span>
-              </span>
-            </button>
-            
-          </div>
-        </nav>
-        <!-- End Navbar -->
+        
       </div>
     </div>
   </div>
@@ -54,8 +38,8 @@
             <div class="col-xl-4 col-lg-5 col-md-7 d-flex flex-column mx-lg-0 mx-auto">
               <div class="card card-plain">
                 <div class="card-header pb-0 text-start">
-                  <h4 class="font-weight-bolder">Inicia Sesion</h4>
-                  <p class="mb-0">Captura tu usuario para iniciar sesión</p>
+                  <h4 class="font-weight-bolder">Inicia Sesión</h4>
+                  <p class="mb-0">Rellena los datos para iniciar sesión.</p>
                 </div>
                 <div class="card-body">
                   <form role="form" method="POST" autocomplete="off">
@@ -66,7 +50,7 @@
                       <input type="password" name="password" class="form-control form-control-lg" placeholder="Contraseña" aria-label="Password">
                     </div>
                     <div class="text-center">
-                      <button type="submit" class="btn btn-lg btn-primary btn-lg w-100 mt-4 mb-0">Iniciar Sesion</button>
+                      <button type="submit" class="btn btn-lg btn-primary btn-lg w-100 mt-4 mb-0">Iniciar Sesión</button>
                     </div>
                     <?php 
                       $login = new ControladorUsuarios();

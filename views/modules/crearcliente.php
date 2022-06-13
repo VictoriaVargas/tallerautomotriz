@@ -17,6 +17,17 @@
                             </div>
                         </div>
                     </div>
+                    <!-- Inicia Input de Cliente -->
+                    <div class="row mb-3">
+                        <label class="col-sm-2 col-form-label" for="basic-icon-default-company">Nombre</label>
+                        <div class="col-sm-10">
+                            <div class="input-group input-group-merge">
+                                <span id="basic-icon-default-fullname2" class="input-group-text"><i class="bx bx-user"></i></span>
+                                <input type="text" name="nombre" id="basic-icon-default-fullname2" class="form-control" placeholder=""  aria-describedby="basic-icon-default-fullname2" required/>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Termina Input de Cliente -->
                     <div class="row mb-3">
                         <label class="col-sm-2 col-form-label" for="basic-icon-default-fullname">Comuna</label>
                         <div class="col-sm-10">
@@ -31,15 +42,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="row mb-3">
-                        <label class="col-sm-2 col-form-label" for="basic-icon-default-company">Nombre</label>
-                        <div class="col-sm-10">
-                            <div class="input-group input-group-merge">
-                                <span id="basic-icon-default-fullname2" class="input-group-text"><i class="bx bx-user"></i></span>
-                                <input type="text" name="nombre" id="basic-icon-default-fullname2" class="form-control" placeholder=""  aria-describedby="basic-icon-default-fullname2"/>
-                            </div>
-                        </div>
-                    </div>
+                    
                     <div class="row mb-3">
                         <label class="col-sm-2 col-form-label" for="basic-icon-default-company">Direccion</label>
                         <div class="col-sm-10">

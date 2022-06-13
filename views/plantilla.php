@@ -34,6 +34,9 @@ session_start();
     <!-- Helpers -->
     <script src="views/assets2/vendor/js/helpers.js"></script>
     <script src="views/assets2/js/config.js"></script>
+
+    <!-- Sweetalert Libreria para control de mensajes -->
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </head>
 
 <?php 
