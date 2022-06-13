@@ -3,7 +3,7 @@
 <aside id="layout-menu" class="layout-menu menu-vertical menu bg-menu-theme">
   <div class="app-brand demo">
     <a href="dashboard" class="app-brand-link">
-      <span class="app-brand-text demo menu-text fw-bolder ms-2">Chrome Cars</span>
+      <span class="app-brand-text demo menu-text fw-bolder ms-2">Chromo Cars</span>
     </a>
 
     <a href="inicio" class="layout-menu-toggle menu-link text-large ms-auto d-block d-xl-none">
@@ -33,7 +33,7 @@
       </a>
       <ul class="menu-sub">
         <li class="menu-item">
-          <a href="" class="menu-link">
+          <a href="crearcliente" class="menu-link">
             <div data-i18n="Account">Nuevo Cliente</div>
           </a>
         </li>

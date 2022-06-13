@@ -7,9 +7,11 @@
 /** CONTROLADORES */
 require_once "controllers/plantilla.controller.php";
 require_once "controllers/users.controller.php";
+require_once "controllers/clientes.controller.php";
 
 /** MODELOS */
 require_once "models/users.models.php";
+require_once "models/clientes.models.php";
 
 $plantilla = new ControladorPlantilla();
 $plantilla -> ctrPlantilla();

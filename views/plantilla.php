@@ -7,7 +7,7 @@ session_start();
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
-    <title>CHROME CARS</title>
+    <title>CHROMO CARS</title>
     <meta name="description" content="" />
 
     <!-- Favicon -->
@@ -46,7 +46,8 @@ session_start();
                             echo '<div class="content-wrapper">';
                             /* Aquí va el contenido dependiendo de la vista a la que entren */
                             if(isset($_GET["ruta"])){
-                                if($_GET["ruta"]=="dashboard"){
+                                if($_GET["ruta"]=="dashboard"||
+                                $_GET["ruta"]=="crearcliente"){
                                     include "modules/".$_GET["ruta"].".php";
                                 }else{
                                     include "modules/404.php";

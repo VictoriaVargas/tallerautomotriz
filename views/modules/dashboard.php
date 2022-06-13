@@ -7,7 +7,7 @@
                         <div class="card-body">
                           <h5 class="card-title text-primary">Felicidades Yohann! 🎉</h5>
                           <p class="mb-4">
-                            Has completaod el <span class="fw-bold">72%</span> de las ordenes de Servicio que tienes programadas.
+                            Has completado el <span class="fw-bold">72%</span> de las ordenes de Servicio que tienes programadas.
                           </p>
 
                           <a href="javascript:;" class="btn btn-sm btn-outline-primary">Ver Ordenes de Servicio</a>
@@ -42,7 +42,7 @@
                             </div>
                           </div>
                           <span class="fw-semibold d-block mb-1">Ordenes de Servicio</span>
-                          <h3 class="card-title mb-2">12,628</h3>
+                          <h3 class="card-title mb-2">56,009</h3>
                         </div>
                       </div>
                     </div>
